@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jet", "Jet.csproj", "{F12F1F39-69EC-4681-92D2-F45FD1C0E73B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JetTests", "..\JetTests\JetTests.csproj", "{1B7F4C16-DCC6-4DCB-AC38-BE046B89B4D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F12F1F39-69EC-4681-92D2-F45FD1C0E73B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F12F1F39-69EC-4681-92D2-F45FD1C0E73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F12F1F39-69EC-4681-92D2-F45FD1C0E73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F12F1F39-69EC-4681-92D2-F45FD1C0E73B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B7F4C16-DCC6-4DCB-AC38-BE046B89B4D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B7F4C16-DCC6-4DCB-AC38-BE046B89B4D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B7F4C16-DCC6-4DCB-AC38-BE046B89B4D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B7F4C16-DCC6-4DCB-AC38-BE046B89B4D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {729FC8DE-BADF-40E2-A541-90F50D1B5625}
+	EndGlobalSection
+EndGlobal
