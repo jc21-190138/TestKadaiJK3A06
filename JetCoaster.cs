@@ -10,44 +10,59 @@ namespace Jet
     {
         public static int ride(int k, int[] g, int r)
         {
+            int[] hako = new int[g.Length];
+            Array.Copy(g, hako, g.Length);
+
             int goukei = 0;
-            int youso = 0;
-            int i = 1;//回数
-            int j = 0;//配列の数
-            int s =0;
+            int p;
+            int teisu = k;
 
-            for (i = 1; i <= r; i++) //動作回数
+            for (int i = 0; i <r;i++)
             {
+                k = teisu;
+                int count = 0;
 
-                for (j = 0; j <= g.Length-1; j++)　//定員人数
+
+
+                for (int j = 0; j < g.Length; j++)
                 {
-
-                    if (goukei <= k)　//定員人数判定
+                    if (k >= g[j])
                     {
-                        goukei += g[youso];
-                      
+                        k = k - g[j];
+                        goukei = goukei + g[j];
+                        count = count + 1;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                for (int n = 0; n < count; n++)
+                {
+                    p = g[0];
+                    for (int m = 0; m < g.Length; m++)
+                    {
+                        if (m == g.Length - 1)
+                        {
+                            g[m] = p;
+                        }
+                        else
+                        {
+                            g[m] = g[m + 1];
+                        }
 
-                        if (goukei > k)
-                        {
-                            goukei -= g[youso];
-                            s += goukei;
-                            goukei = 0;
-                            break;
-                        }
-                        youso = youso + 1;
-                        if(youso == g.Length)
-                        {
-                            youso = 0;
-                        }
-                     
                     }
 
                 }
-               
-              
+
+
             }
-            return s;
+            Array.Copy(hako, g, hako.Length);
+            return goukei;
         }
     }
 }
+
+    
+
 
